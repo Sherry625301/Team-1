@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my responsive page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "microsoft yahei";
+        }
+        #top{
+            background-color:#212529;
+            color:white;
+            display: flex;
+            justify-content: space-between;
+            padding:0 50px;
+            line-height: 50px;
+        }
+        h2{
+            font-weight: normal;
+            font-size: 18px;
+        }
+       #top ul{
+            display: flex;
+            list-style-type: none;
+        }
+        #top li{
+            margin-right: 10px;
+            color:#aaa;
+        }
+        #main{
+            background-color:#212529;
+            padding:0 50px;
+            display: flex;
+            align-items: center;
+        }
+        #main-left h2{
+            font-size: 40px;
+            color:#fff;
+            font-weight: normal;
+        }
+        #main-left h2 span{
+            color: #ffc107;
+        }
+        #main-left p{           
+            color:#fff;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            line-height: 2;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        #main-left button{
+            background-color: #0d6efd;
+            border: none;
+            color:#fff;
+            display: block;
+            padding:15px;
+            font-size:20px;
+            margin-bottom: 20px;
+        }
+        #main img{
+            width:55%;
+            margin-left: 400px;
+        }
+        #newsletter{
+            background-color: #0d6efd;
+            padding:10px 50px;
+            display: flex;
+            color: #fff;
+            align-items: center;
+        }
+        #newsletter h2{
+            color: #fff;
+            font-size: 1.75rem;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+        #newsletter div{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+        #newsletter input{
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2em;
+        }
+        #newsletter input:focus{
+            outline: none;
+        }        
+        #newsletter button{
+            padding:8px 10px;
+            background-color: #212529;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2em;
+        }
+        #three{
+            display: flex;
+            padding: 0 50px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        #left,#right{
+            background-color: #212529;
+        }
+        #mid{
+            background-color: #6c757d;
+        }
+        #three>div{
+            width: 33.33%;
+            padding: 10px 30px;
+            text-align: center;
+            color: #fff;
+        }
+        #left a,#right a{
+            color:#fff;
+            text-decoration: none;
+            background-color: #0d6efd;
+            display: inline-block;
+            margin: 15px 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #mid a{
+            color:#fff;
+            text-decoration: none;
+            background-color: #212529;
+            display: inline-block;
+            margin: 15px 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #left,#mid{
+            margin-right: 50px;
+        }
+        #three p{
+            line-height: 1.5;
+        }
+    
+        @media(max-width: 768px){
+
+            #main{
+                flex-direction: column;
+            }
+            #main img{
+                display: none;
+            }
+            #top{
+                flex-direction: column;
+            }
+            #top ul{
+                flex-direction: column;
+            }
+            #main-left{
+                text-align: center;
+            }
+            #top li{
+                line-height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h2>
+            组长：黄成霞
+        </h2>
+        
+        <ul>
+            <li>黄若红</li>
+            <li>谢小菲</li>
+            <li>杨雪澜</li>
+            <li>李丽梅</li>
+        </ul>
+    </div>
+
+    <div id="main">
+
+        <div id="main-left">
+            <h2>2022级电子商务 <span>1班</span> </h2>
+            <p>
+                网页设计与制作实验
+            </p>
+            <button>实验二</button>
+        </div>
+
+        <img src="./undraw_complete_design_re_h75h.svg" alt="">
+    </div>
+
+    <div id="newsletter">
+        <h2>sign in for our newsletter</h2>
+
+        <div id="input">
+            <input type="text" placeholder="enter your email here">
+            <button>Button</button>
+        </div>
+        
+    </div>
+
+    <div id="three">
+
+        <div id="left">
+            <h2>页面重构</h2>
+            <a href="./gufe.html">实验一</a>
+        </div>
+
+        <div id="mid">
+            <h2>JavaScript页面交互</h2>
+            <a href="./todos -plain.html">实验三</a>
+        </div>
+
+        <div id="right">
+            <h2>事件及事件对象</h2>
+            <a href="./calculator.html">实验四</a>
+        </div>
+    </div>  
+        
+</body>
+</html> 
